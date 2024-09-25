@@ -15,8 +15,8 @@ import pickle
 def main():
     st.title("Water Potability Prediction")
     st.sidebar.title("Water Potability Prediction")
-    st.markdown("Lets Find Condition of Water")
-    st.sidebar.markdown("Lets Find Condition of Water")
+    st.markdown("Lets Find Quality of Water")
+    st.sidebar.markdown("Lets Find Quality of Water")
 
 #---- load data---
     #st.cache_data(persist=True)
