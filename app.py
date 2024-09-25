@@ -13,24 +13,23 @@ from math import sqrt
 import pickle
 
 def main():
-    st.title("Used CAR Price Prediction")
-    st.sidebar.title("Used CAR Price Prediction")
-    st.markdown("Lets Find Second Hand CAR Price")
-    st.sidebar.markdown("Lets Find Second Hand CAR Price")
+    st.title("Water Potability Prediction")
+    st.sidebar.title("Water Potability Prediction")
+    st.markdown("Lets Find Condition of Water")
+    st.sidebar.markdown("Lets Find Condition of Water")
 
 #---- load data---
     #st.cache_data(persist=True)
     def load_data():
-        data=pd.read_csv("cleandata.csv")
+        data=pd.read_csv("train_data.csv")
         return data
 
     #st.cache_data(persist=True)
     def split(df):
-        x=pd.get_dummies(data=df,drop_first=True,dtype="int64")
-        x.drop(["price"],axis=1,inplace=True)
-        y=df.price
+        x.drop(["Potability"],axis=1,inplace=True)
+        y=df.Potability
         #_________#
-        x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=0)
+        x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=12,shuffle=True)
         return x_train,x_test,y_train,y_test
     
     df=load_data()
