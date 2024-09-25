@@ -26,6 +26,7 @@ def main():
 
     #st.cache_data(persist=True)
     def split(df):
+        #x=pd.get_dummies(data=df,drop_first=True,dtype="int64")
         x=df.drop(["Potability"],axis=1,inplace=True)
         y=df.Potability
         #_________#
