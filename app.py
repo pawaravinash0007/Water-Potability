@@ -27,7 +27,7 @@ def main():
     #st.cache_data(persist=True)
     def split(df):
         x=df.drop(["Potability"],axis=1,inplace=True)
-        y=df.Potability
+        y=df["Potability"]
         #_________#
         x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=12,shuffle=True)
         return x_train,x_test,y_train,y_test
