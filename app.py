@@ -21,7 +21,7 @@ def main():
 #---- load data---
     #st.cache_data(persist=True)
     def load_data():
-        data=pd.read_csv("train_data.csv")
+        data=pd.read_csv("ready.csv")
         return data
 
     #st.cache_data(persist=True)
