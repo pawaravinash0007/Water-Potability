@@ -27,7 +27,7 @@ def main():
     #st.cache_data(persist=True)
     def split(df):
         #x=pd.get_dummies(data=df,drop_first=True,dtype="int64")
-        x=df.drop(["Potability"],axis=1,inplace=True)
+        x=df.drop(["Potability"],axis=1)
         y=df.Potability
         #_________#
         x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=12,shuffle=True)
