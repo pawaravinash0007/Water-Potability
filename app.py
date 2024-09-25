@@ -103,7 +103,7 @@ def main():
             st.write("Price",y_pred_lr)
             
     if st.sidebar.checkbox("Show Training data",False):
-        st.subheader("Dummy Variables DataSet")
+        st.subheader("Training Dataset")
         st.write(x_train)
     if st.sidebar.checkbox("Show raw data",False):
         st.subheader("Original Dataset")
