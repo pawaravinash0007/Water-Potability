@@ -112,7 +112,7 @@ def main():
     
 
 # #---Done --
-      st.markdown("This is case study is for pratice purpose only")
+    st.markdown("This is case study is for pratice purpose only")
 
 if __name__ == '__main__':
     main()
