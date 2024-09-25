@@ -96,7 +96,7 @@ def main():
             lr = LinearRegression()
             lr.fit(x_train,y_train)
             y_pred_lr=lr.predict(x_test)
-            acc_lr=sqrt(mean_squared_error(y_pred_lr,y_test))
+            acc_lr=sqrt(mean_squared_error(y_test,y_pred_lr))
             st.write("Rmse:",acc_lr)
             st.write("RSquare:",r2_score(y_test,y_pred_lr))
             st.write("Input Parameters",x_test)
