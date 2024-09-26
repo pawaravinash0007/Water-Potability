@@ -17,7 +17,7 @@ def main():
     st.sidebar.title("Water Potability Prediction")
     st.markdown("Lets Find Quality of Water")
     st.sidebar.markdown("Lets Find Quality of Water")
-    st.markdown("[Click here to predict using own data](https://waterpotability2.streamlit.app/)")
+    st.markdown("[Click here to predict using your own data](https://waterpotability2.streamlit.app/)")
 #---- load data---
     #st.cache_data(persist=True)
     def load_data():
