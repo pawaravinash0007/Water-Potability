@@ -18,6 +18,7 @@ def main():
     st.markdown("Lets Find Quality of Water")
     st.sidebar.markdown("Lets Find Quality of Water")
     st.markdown("[Click here to predict using your own data](https://waterpotability2.streamlit.app/)")
+    st.text("Study of Model and Hyperparameters")
 #---- load data---
     #st.cache_data(persist=True)
     def load_data():
