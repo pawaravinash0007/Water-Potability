@@ -42,11 +42,11 @@ def main():
     if Regressor=="DCT":
         st.sidebar.subheader("HyperParameters")
         max_depth =st.sidebar.number_input("max_depth",1,100,step=1,key="max_depth")
-        st.markdown("Select value more than 2")
+        st.sidebar.markdown("Select value more than 2")
         min_samples_split = st.sidebar.number_input("min_samples_split",1,1000,step=1,key="min_samples_split")
-        st.markdown("LSelect value more than 2")
+        st.sidebar.markdown("LSelect value more than 2")
         min_samples_leaf=st.sidebar.number_input("min_samples_leaf",1,100,step=1,key="min_samples_leaf")
-        st.markdown("Select value more than 2")
+        st.sidebar.markdown("Select value more than 2")
     # Train Regressor
     
 
